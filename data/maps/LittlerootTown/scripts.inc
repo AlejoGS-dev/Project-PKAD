@@ -81,7 +81,7 @@ LittlerootTown_OnTransition:
 # 42 "data/maps/LittlerootTown/scripts.pory"
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_MoveMomToMaysDoor
 # 43 "data/maps/LittlerootTown/scripts.pory"
-	call_if_unset FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_SetTwinPos
+	// call_if_unset FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_SetTwinPos
 # 44 "data/maps/LittlerootTown/scripts.pory"
 	call_if_eq VAR_LITTLEROOT_TOWN_STATE, 3, LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos
 # 45 "data/maps/LittlerootTown/scripts.pory"
@@ -153,15 +153,15 @@ LittlerootTown_EventScript_MoveMomToMaysDoor::
 # 78 "data/maps/LittlerootTown/scripts.pory"
 
 # 79 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_EventScript_SetTwinPos::
+// LittlerootTown_EventScript_SetTwinPos::
 # 80 "data/maps/LittlerootTown/scripts.pory"
-	goto_if_eq VAR_LITTLEROOT_TOWN_STATE, 0, LittlerootTown_EventScript_SetTwinGuardingRoutePos
+// 	goto_if_eq VAR_LITTLEROOT_TOWN_STATE, 0, LittlerootTown_EventScript_SetTwinGuardingRoutePos
 # 81 "data/maps/LittlerootTown/scripts.pory"
-	setobjectxyperm LOCALID_LITTLEROOT_TWIN, 10, 1
+// 	setobjectxyperm LOCALID_LITTLEROOT_TWIN, 10, 1
 # 82 "data/maps/LittlerootTown/scripts.pory"
-	setobjectmovementtype LOCALID_LITTLEROOT_TWIN, MOVEMENT_TYPE_FACE_UP
+// 	setobjectmovementtype LOCALID_LITTLEROOT_TWIN, MOVEMENT_TYPE_FACE_UP
 # 83 "data/maps/LittlerootTown/scripts.pory"
-	return
+// 	return
 # 84 "data/maps/LittlerootTown/scripts.pory"
 
 # 85 "data/maps/LittlerootTown/scripts.pory"
